@@ -13,6 +13,11 @@
 		0A1E73FB28BD94DF00EAEE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E73F928BD94DF00EAEE7F /* Main.storyboard */; };
 		0A1E73FD28BD94E000EAEE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E73FC28BD94E000EAEE7F /* Assets.xcassets */; };
 		0A1E740028BD94E000EAEE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1E73FE28BD94E000EAEE7F /* LaunchScreen.storyboard */; };
+		0A1E740928BD94F700EAEE7F /* LottoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E740828BD94F700EAEE7F /* LottoAPIManager.swift */; };
+		0A1E740B28BD9BB700EAEE7F /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E740A28BD9BB700EAEE7F /* Lotto.swift */; };
+		0A1E740E28BDA72F00EAEE7F /* PersonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E740D28BDA72F00EAEE7F /* PersonAPIManager.swift */; };
+		0A1E741128BDA88800EAEE7F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E741028BDA88800EAEE7F /* Person.swift */; };
+		0A1E741428BDB77000EAEE7F /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E741328BDB77000EAEE7F /* URLSession+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0A1E73FC28BD94E000EAEE7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1E73FF28BD94E000EAEE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1E740128BD94E000EAEE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1E740828BD94F700EAEE7F /* LottoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPIManager.swift; sourceTree = "<group>"; };
+		0A1E740A28BD9BB700EAEE7F /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		0A1E740D28BDA72F00EAEE7F /* PersonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPIManager.swift; sourceTree = "<group>"; };
+		0A1E741028BDA88800EAEE7F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0A1E741328BDB77000EAEE7F /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,10 @@
 		0A1E73F228BD94DF00EAEE7F /* Week9 */ = {
 			isa = PBXGroup;
 			children = (
+				0A1E741228BDB76200EAEE7F /* Extensions */,
+				0A1E740F28BDA76100EAEE7F /* Keys */,
+				0A1E740C28BDA71700EAEE7F /* TMDBPerson */,
+				0A1E740728BD94ED00EAEE7F /* Lotto */,
 				0A1E73F328BD94DF00EAEE7F /* AppDelegate.swift */,
 				0A1E73F528BD94DF00EAEE7F /* SceneDelegate.swift */,
 				0A1E73F728BD94DF00EAEE7F /* ViewController.swift */,
@@ -65,6 +79,39 @@
 				0A1E740128BD94E000EAEE7F /* Info.plist */,
 			);
 			path = Week9;
+			sourceTree = "<group>";
+		};
+		0A1E740728BD94ED00EAEE7F /* Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				0A1E740828BD94F700EAEE7F /* LottoAPIManager.swift */,
+				0A1E740A28BD9BB700EAEE7F /* Lotto.swift */,
+			);
+			path = Lotto;
+			sourceTree = "<group>";
+		};
+		0A1E740C28BDA71700EAEE7F /* TMDBPerson */ = {
+			isa = PBXGroup;
+			children = (
+				0A1E740D28BDA72F00EAEE7F /* PersonAPIManager.swift */,
+				0A1E741028BDA88800EAEE7F /* Person.swift */,
+			);
+			path = TMDBPerson;
+			sourceTree = "<group>";
+		};
+		0A1E740F28BDA76100EAEE7F /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		0A1E741228BDB76200EAEE7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A1E741328BDB77000EAEE7F /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1E73F828BD94DF00EAEE7F /* ViewController.swift in Sources */,
+				0A1E740B28BD9BB700EAEE7F /* Lotto.swift in Sources */,
 				0A1E73F428BD94DF00EAEE7F /* AppDelegate.swift in Sources */,
+				0A1E740E28BDA72F00EAEE7F /* PersonAPIManager.swift in Sources */,
+				0A1E741428BDB77000EAEE7F /* URLSession+Extension.swift in Sources */,
+				0A1E741128BDA88800EAEE7F /* Person.swift in Sources */,
 				0A1E73F628BD94DF00EAEE7F /* SceneDelegate.swift in Sources */,
+				0A1E740928BD94F700EAEE7F /* LottoAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
