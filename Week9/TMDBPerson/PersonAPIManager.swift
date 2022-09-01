@@ -37,6 +37,7 @@ class PersonAPIManager {
 //        URLSession+Extension  // 내일(08.31)할 것
 //        URLSession.request(endpoint: <#T##URLRequest#>, completion: <#T##((Decodable & Encodable)?, APIError?) -> Void#>)
         
+//        URLSession.shared.dataTask(with: component.url) { data, response, error in
         URLSession.shared.dataTask(with: url) { data, response, error in  // 실질적인 순서는 거꾸로 error 먼저 확인하고 response가 잘 왔는지 확인 후 data 확인
             
             DispatchQueue.main.async {
